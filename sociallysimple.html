@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Socially Simple</title>
+  <title>SociallySimple</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -48,6 +48,26 @@
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
+ <style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+
+</style>
   </style>
 </head>
 <body>
@@ -75,7 +95,7 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <h3 class="margin">SOCIALLY SIMPLE</h3>
+  <h3 class="margin">SOCIALLYSIMPLE</h3>
   <img src="https://lh5.googleusercontent.com/Xz25EWmNSo-x6Vi4vM6REG34bsklIN4qt7UJyQE9wL8_ZUbJ_nSAXtHV2LVDo7LlGL1TBkskhDmCew=w1366-h638" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
   <h3 </h3>
 </div>
@@ -104,17 +124,18 @@
   <h3 class="margin">The Team</h3><br>
   <div class="row">
     <div class="col-sm-4">
-      <p>Chrome exstention coding worked on by Olivia Taylor, Melanie Vasquez, Sonam Lhamo,and  Daril Alanis</p>
-        <p>webpage creator Abisola Akinfenwa
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <p>Chrome exstention coders: Olivia Taylor, Melanie Vasquez, Sonam Lhamo,and  Daril Alanis</p>
+        <p>webpage creator: Abisola Akinfenwa
+      <img src="birds1.jpg" class="img-responsive margin" style="width:95%" alt="Image">
     </div>
     <div class="col-sm-4"> 
       <p>Sponsored by GIRLS WHO CODE @ PFIZER</p>
-      <img src="https://girlswhocode.com/wp-content/uploads/2013/04/Press_GWC-Square-Logo.png" class="img-responsive margin" style="width:100%" alt="Image">
+      <img src="https://girlswhocode.com/wp-content/uploads/2013/04/Press_GWC-Square-Logo.png" class="img-responsive margin" style="width:95%" alt="Image">
     </div>
     <div class="col-sm-4"> 
-      <p>SOCIALLY SIMPLE behind the scenes</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <p>SOCIALLYSIMPLE</p> 
+        <p>behind the scenes</p>
+      <img src="birds3.jpg" class="img-responsive margin" style="width:95%" alt="Image">
     </div>
   </div>
 </div>
@@ -123,6 +144,24 @@
 <footer class="container-fluid bg-4 text-center">
   <p>Find the Chrome Exstention once you go to your Facebook page to login (you can easiely login to your facebook by clicking the FACEBOOK option at the top of this page)</p> 
 </footer>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
 </html>
